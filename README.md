@@ -20,7 +20,7 @@ Console application created in PHP to retrieve RSS\Atom data and save them to a 
 
 ## Usuage
 If you are using docker you can run commands with `run.sh`. For example, the command `./run.sh csv:simple https://blog.nationalgeographic.org/rss` will save the csv file to the specified path.
-Remember that when using docker, file is saved in the container. You can also invoke commands with `php console.php` in the `/app` directory.
+Remember that when using docker, file is saved in the container. You can also invoke commands with `php console.php` in the `/app/src` directory.
 
 ## Run Unit Tests
 The command is used to invoke the tests `./docker.sh phpunit` or `./phpunit.sh` in `/app` dir.
