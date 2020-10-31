@@ -20,7 +20,7 @@ class CsvRowTransformer extends Transformer
 
         return $model
             ->setCreator((string)$data->author ?? '')
-            ->setDescription((string)$data->description ?? '')
+            ->setDescription(strip_tags((string)$data->description ?? ''))
             ->setLink((string)$data->link ?? '')
             ->setPubDate($this->formatDate((string)$data->pubDate))
             ->setTitle((string)$data->title ?? '');
