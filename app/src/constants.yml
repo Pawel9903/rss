@@ -1,0 +1,3 @@
+commands:
+  - { name: 'csv:simple', parameters: "URL PATH", description: "Get RSS/Atom data from URL and save them to PATH.csv file specified by in the PATH path." }
+  - { name: 'csv:extended', parameters: "URL PATH", description: "Fetching RSS/Atom data from the URL and inserting them into a file PATH.csv specified by in the PATH path." }

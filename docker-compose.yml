@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  php-fpm:
+    user: ${CURRENT_USER}
+    build:
+      context: ${DEV_PATH}/.docker/php-fpm
+      args:
+        TIMEZONE: ${PHP_TIMEZONE}
+    volumes:
+      - ${APP_PATH}:/home/app:delegated
+    working_dir: /home/app
+    restart: on-failure
